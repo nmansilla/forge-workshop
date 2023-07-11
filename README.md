@@ -6,14 +6,14 @@
 
 This workshop will help you get started with Forge so you can customise and extend Atlassian products either for your own use, or for selling in the [Atlassian Marketplace](marketplace.atlassian.com).
 
+<br clear="both"/>
+
 
 ## Setup
 
 <img align="right" width="500" alt="An illustration of the setup steps of the Forge workshop" src="/images/setup-steps.png">
 
 During this section, you will be performing the following setup steps:
-
-![setup visualisation](/images/setup-steps.png | width=300)
 
 
 ### Create an Atlassian account
