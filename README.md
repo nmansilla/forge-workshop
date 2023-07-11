@@ -15,6 +15,8 @@ This workshop will help you get started with Forge so you can customise and exte
 
 During this section, you will be performing the following setup steps:
 
+<br clear="both"/>
+
 
 ### Create an Atlassian account
 
@@ -59,8 +61,9 @@ Now that you have a Forge development environment, it's time to create your firs
 1. In a terminal or shell, change to a directory that you want your Forge app to be located under.
 2. Run `forge create`.
 
-<img align="center" width="500" alt="A screenshot of the forge create command" src="/images/hw-forge-create.png">
-
+<p align="center">
+  <img width="500" alt="A screenshot of the forge create command" src="/images/hw-forge-create.png">
+</p>
 
 
 
