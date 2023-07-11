@@ -105,7 +105,8 @@ Now that you have a Forge development environment, it's time to create your firs
 </p>
 
 
-:tada: You've just created and installed an app in a few minutes. 
+:muscle: You've just created and installed an app in a few minutes. 
+:tada: And you didn't need to set up any hosting.
 
 ## Developer Console
 
