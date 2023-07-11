@@ -56,6 +56,8 @@ Creating an Atlassian cloud developer site allows you to install and test your a
 
 ## Jira Hello World
 
+### Creating the app and installing it in Jira
+
 Now that you have a Forge development environment, it's time to create your first app. 
 
 1. In a terminal or shell, change to a directory that you want your Forge app to be located under.
@@ -103,6 +105,7 @@ Now that you have a Forge development environment, it's time to create your firs
 </p>
 
 
+:tada: You've just created and installed an app in a few minutes. 
 
 ## Developer Console
 
