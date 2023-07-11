@@ -4,15 +4,18 @@
 
 This workshop will help you get started with Forge so you can customise and extend Atlassian products either for your own use, or for selling in the [Atlassian Marketplace](marketplace.atlassian.com).
 
-<img width="500" alt="An illustration of an overview of the Forge workshop" src="/images/overview.png">
+<p align="center">
+  <img width="500" alt="An illustration of an overview of the Forge workshop" src="/images/overview.png">
+</p>
 
 
 ## Setup
 
 During this section, you will be performing the following setup steps:
 
-<img width="500" alt="An illustration of the setup steps of the Forge workshop" src="/images/setup-steps.png">
-
+<p align="center">
+  <img width="500" alt="An illustration of the setup steps of the Forge workshop" src="/images/setup-steps.png">
+</p>
 
 ### Create an Atlassian account
 
@@ -116,7 +119,7 @@ Your app has two parts:
 You can find the code for these two parts here:
 
 <p align="center">
-  <img width="900" alt="A screenshot showing where code is in a Forge app" src="/images/hw-code-location.gif">
+  <img width="900" alt="A screenshot showing where code is in a Forge app" src="/images/hw-code-location.png">
 </p>
 
 TBD (more explaining to do)
