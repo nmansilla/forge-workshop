@@ -119,7 +119,7 @@ Your app has two parts:
 You can find the code for these two parts here:
 
 <p align="center">
-  <img width="900" alt="A screenshot showing where code is in a Forge app" src="/images/hw-code-location.png">
+  <img width="300" alt="A screenshot showing where code is in a Forge app" src="/images/hw-code-location.png">
 </p>
 
 TBD (more explaining to do)
