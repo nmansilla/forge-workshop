@@ -65,5 +65,46 @@ Now that you have a Forge development environment, it's time to create your firs
   <img width="500" alt="A screenshot of the forge create command" src="/images/hw-forge-create.png">
 </p>
 
+3. Enter a name for your app using the convention of lower case letters and dashes.
+4. Select the `UI Kit 2 (Preview)` as the category.
+5. Select `jira-issue-panel` as the template.
 
+<p align="center">
+  <img width="500" alt="A screenshot of the forge create command" src="/images/hw-forge-create-2.png">
+</p>
+
+6. Wait for the app to be created. 
+7. Change into your app's directory. e.g. `cd forge-workshop-hello`
+8. Run `npm install`.
+9. If prompted, run `npm audit fix` to fix vulnerabiolities.
+10. Run `forge deploy` to deploy the app.
+
+<p align="center">
+  <img width="500" alt="A screenshot of the forge deploy command" src="/images/hw-forge-deploy.png">
+</p>
+
+11. Run `forge install` to install the app. 
+12. Select Jira as the product.
+13. Enter the URL of your Atlassian developer site which you created previously.
+
+<p align="center">
+  <img width="500" alt="A screenshot of the forge install command" src="/images/hw-forge-install.png">
+</p>
+
+14. Enter `y` when asked if **Are you sure you want to continue installing the app?**.
+15. Visit your Atlassian developer site in a browser.
+16. If you haven;t got any projects, create one by selecting *Create project* from the *Projects* menu.
+17. If you don't have any issues in your project, create one by clicking the *Create* button.
+18. Visit an issue in your project.
+19. Select your app's issue panel from the menu and check it renders as follows:
+
+<p align="center">
+  <img width="900" alt="A scrren recording of the app issue panel selection" src="/images/hw-open-issue-panel.gif">
+</p>
+
+
+
+## Developer Console
+
+TBD
 
