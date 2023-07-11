@@ -2,14 +2,14 @@
 
 ## Introduction
 
-This workshop will help you get started with Forge so you can customise and extend Atlassian products either for your own use, or for selling in the [Atlassian Marketplace](marketplace.atlassian.com).
+<img align="right" width="500" alt="An illustration of an overview of the Forge workshop" src="/images/overview.png">
 
-![setup visualisation](/images/overview.png | width=300)
+This workshop will help you get started with Forge so you can customise and extend Atlassian products either for your own use, or for selling in the [Atlassian Marketplace](marketplace.atlassian.com).
 
 
 ## Setup
 
-<img align="right" width="100" src="/images/setup-steps.png">
+<img align="right" width="500" alt="An illustration of the setup steps of the Forge workshop" src="/images/setup-steps.png">
 
 During this section, you will be performing the following setup steps:
 
@@ -59,7 +59,7 @@ Now that you have a Forge development environment, it's time to create your firs
 1. In a terminal or shell, change to a directory that you want your Forge app to be located under.
 2. Run `forge create`.
 
-![forge create command](/images/hw-forge-create.png | width=500)
+<img align="center" width="500" alt="A screenshot of the forge create command" src="/images/hw-forge-create.png">
 
 
 
