@@ -2,20 +2,16 @@
 
 ## Introduction
 
-<img align="right" width="500" alt="An illustration of an overview of the Forge workshop" src="/images/overview.png">
-
 This workshop will help you get started with Forge so you can customise and extend Atlassian products either for your own use, or for selling in the [Atlassian Marketplace](marketplace.atlassian.com).
 
-<br clear="both"/>
+<img width="500" alt="An illustration of an overview of the Forge workshop" src="/images/overview.png">
 
 
 ## Setup
 
-<img align="right" width="500" alt="An illustration of the setup steps of the Forge workshop" src="/images/setup-steps.png">
-
 During this section, you will be performing the following setup steps:
 
-<br clear="both"/>
+<img width="500" alt="An illustration of the setup steps of the Forge workshop" src="/images/setup-steps.png">
 
 
 ### Create an Atlassian account
@@ -101,14 +97,32 @@ Now that you have a Forge development environment, it's time to create your firs
 19. Select your app's issue panel from the menu and check it renders as follows:
 
 <p align="center">
-  <img width="900" alt="A scrren recording of the app issue panel selection" src="/images/hw-open-issue-panel.gif">
+  <img width="900" alt="A screen recording of the app issue panel selection" src="/images/hw-open-issue-panel.gif">
 </p>
 
 
 :muscle: You've just created and installed an app in a few minutes. 
+
 :tada: And you didn't need to set up any hosting.
+
+
+### How does it work?
+
+Your app has two parts:
+
+* Backend functionality that runs on Atlaassian's functions as a service (FaaS)
+* A front end that renders the *Issue context panel*.
+
+You can find the code for these two parts here:
+
+<p align="center">
+  <img width="900" alt="A screenshot showing where code is in a Forge app" src="/images/hw-code-location.gif">
+</p>
+
+TBD (more explaining to do)
+
 
 ## Developer Console
 
-TBD
+TBD (do a little tour of Developer Console features centred around the app we created)
 
