@@ -125,6 +125,15 @@ You can find the code for these two parts here:
 TBD (more explaining to do)
 
 
+### Make changes to the app's back end
+
+TBD
+
+### Make changes to the app's front end
+
+TBD
+
+
 ## Developer Console
 
 TBD (do a little tour of Developer Console features centred around the app we created)
