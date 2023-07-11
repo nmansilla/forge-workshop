@@ -4,11 +4,16 @@
 
 This workshop will help you get started with Forge so you can customise and extend Atlassian products either for your own use, or for selling in the [Atlassian Marketplace](marketplace.atlassian.com).
 
+![setup visualisation](/images/overview.png | width=300)
+
+
 ## Setup
+
+<img align="right" width="100" src="/images/setup-steps.png">
 
 During this section, you will be performing the following setup steps:
 
-![setup visualisation](/images/setup-steps.png)
+![setup visualisation](/images/setup-steps.png | width=300)
 
 
 ### Create an Atlassian account
@@ -45,6 +50,16 @@ Creating an Atlassian cloud developer site allows you to install and test your a
 
 1. Go to http://go.atlassian.com/cloud-dev and create a site using the email address associated with your Atlassian account.
 2. Once your site is ready, log in and complete the setup wizard.
+
+
+## Jira Hello World
+
+Now that you have a Forge development environment, it's time to create your first app. 
+
+1. In a terminal or shell, change to a directory that you want your Forge app to be located under.
+2. Run `forge create`.
+
+![forge create command](/images/hw-forge-create.png | width=500)
 
 
 
