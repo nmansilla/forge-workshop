@@ -1,0 +1,28 @@
+modules:
+  jira:projectPage:
+    - key: jira-project-page
+      function: ui-and-storage
+      title: DevDay23 Demos
+  trigger:
+    - key: jira-trigger-issue-created
+      function: product-trigger-issue
+      events:
+        - avi:jira:created:issue
+    - key: jira-trigger-comment-created
+      function: product-trigger-comment
+      events:
+        - avi:jira:commented:issue
+  function:
+    - key: ui-and-storage
+      handler: ui-and-storage.run
+    - key: product-trigger-issue
+      handler: product-trigger.run
+    - key: product-trigger-comment
+      handler: product-trigger.updateStatus
+permissions:
+  scopes:
+    - 'read:jira-work'
+    - 'write:jira-work'
+    - 'storage:app'
+app:
+  id: ari:cloud:ecosystem::app/7bd5ce60-3f33-4a69-bc4c-26466dfd96f2

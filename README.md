@@ -52,6 +52,22 @@ Creating an Atlassian cloud developer site allows you to install and test your a
 1. Go to http://go.atlassian.com/cloud-dev and create a site using the email address associated with your Atlassian account.
 2. Once your site is ready, log in and complete the setup wizard.
 
+## Fundamentals of Forge
+
+[CLI](https://go.atlassian.com/forge-cli) - Forge CLI is the command line interface for building and deploying Forge apps.
+
+[Jira Modules](https://go.atlassian.com/forge-jira-modules) - Modules describe how Forge apps extend and interact with Atlassian products.
+
+[Permissions](https://go.atlassian.com/forge-permissions) - Permissions controls your app's access to remote resources.
+
+[Manifest](https://developer.atlassian.com/platform/forge/manifest-reference/) - The manifest is a YAML file that describes your Forge app. It includes theÂ modulesÂ your app wants to use, theÂ permissionsÂ required by your app, and other information about your app.
+
+[App Deployment](https://go.atlassian.com/forge-environments) - Forge automatically creates development, staging and production environment to deploy your apps.
+
+[Environment variables](https://go.atlassian.com/forge-environments) - Key-value pairs you can manage via theÂ Forge CLI variables commands for different environments.
+
+[Tunneling](https://developer.atlassian.com/platform/forge/tunneling/) - Tunneling runs your app code locally on your machine via the Forge CLI.
+
 
 ## Jira Hello World
 
@@ -125,16 +141,48 @@ You can find the code for these two parts here:
 TBD (more explaining to do)
 
 
-### Make changes to the app's back end
+## Hands-on Coding Sessions
 
-TBD
+### Exercise #1 - Customising UI
 
-### Make changes to the app's front end
+1. [UI kit](https://developer.atlassian.com/platform/forge/ui-kit-components/)
+    1. Components help build UI of your app.
+    2. Components are described using declarative markup language.
+    3. Follows Atlassian Design guidelines out of the box.
+2. [Custom UI](https://developer.atlassian.com/platform/forge/custom-ui/iframe/)
+    1. Supports custom built UI using iframes
+    2. Use your own HTML, CSS, JS, icons, images
+    3. Forge hosts your static resources
 
-TBD
+### Exercise #2 - Triggers
+
+1. [Product trigger](https://developer.atlassian.com/platform/forge/manifest-reference/modules/trigger/) - Product trigger invokes a function when a product event is fired.
+    - [Jira events](https://go.atlassian.com/jira-events)
+2. [Scheduled trigger](https://developer.atlassian.com/platform/forge/manifest-reference/modules/scheduled-trigger/) - Scheduled trigger repeatedly invokes a function on a scheduled interval.
+3. [Web trigger](https://developer.atlassian.com/platform/forge/manifest-reference/modules/web-trigger/#web-trigger) - Web trigger invokes a function as the result of an HTTP request.
+
+### Exercise #3 - Storage
+
+1. [Storage API](https://developer.atlassian.com/platform/forge/storage/) - The app storage API is a key-value storage API, which enables your app to store data for specific Jira or Confluence sites. The app storage API stores data partitioned by product and site, and is accessible only to your app.
+2. [Entity Properties](https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/) - Entity properties enable apps to add key-value stores to Jira entities, such as issues or projects. 
 
 
-## Developer Console
+## Developer console
 
 TBD (do a little tour of Developer Console features centred around the app we created)
 
+### Useful references
+
+- [Async API](https://developer.atlassian.com/platform/forge/runtime-reference/async-events-api/#async-events-api)
+- [Integration with third party APIs](https://go.atlassian.com/forge-giphy)
+- [Developer Console](https://developer.atlassian.com/console/myapps/) - All the tools necessary to manage your apps, monitor their performance, check the logs and ability to distribute your app.
+- [Debugging](https://developer.atlassian.com/platform/forge/debugging/#debugging) - ***forge tunnel â€”debug***
+- [Example Forge apps for Jira](https://developer.atlassian.com/platform/forge/example-apps-jira/)
+- [Tutorials and guides](https://developer.atlassian.com/platform/forge/tutorials-and-guides/)
+
+### Useful CLI commands
+- Use the `forge deploy` command when you want to persist code changes into the cloud.
+- Use the `forge install` command when you want to install the app on a new site.
+- Once the app is installed on a site, the site picks up the new app changes you deploy without needing to rerun the install command.
+- Use the `forge upgrade` command to push a new version change to existing installations (ex: when you make changes to manifest, such as permissions/scopes)
+- Use the `forge tunnel` command to quickly test code changes in the `DEVELOPMENT` environment (app runs locally is proxied)
