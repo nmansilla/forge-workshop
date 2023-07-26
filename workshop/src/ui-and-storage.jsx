@@ -6,10 +6,13 @@ import { storage, startsWith } from '@forge/api';
 
 const Issue = props => {
   return (
-    // 1. Components - An element that describes part of your app’s interface. Example - Text, Heading, Table.
+    /* 1. Components - An element that describes part of your app’s interface.
+          Example - Text, Heading, Table. Below is a Fragment component that
+          allows you to include/nest other components within, such as the
+          Text element.
+    */
     <Fragment>
-      <Text>Issue key: {props.issueKey}</Text>
-      <Text>Issue summary: {props.summary}</Text>
+      <Text em="2.5">{props.issueKey}</Text>
     </Fragment>
   );
 };
@@ -43,9 +46,17 @@ const App = () => {
    const context = useProductContext();
    const projectKey = context.platformContext.projectKey;
 
-   // 2. Hooks - Special functions that enable you to update and use the state of your app. 
-   //            The state is a value that the component remembers and can be updated. Example - useState().
+   /* 2. Hooks - UI kit hooks are functions that enable you to update and use
+                 the state of your app. The state is a value that the component
+                 remembers and can be updated. 
+                 Example - useState().
 
+         useProductContext() returns an object containing contextual information
+         about the current environment in which the component is running, such as
+         cloud ID of the instance, account ID of user, content ID of the piece of
+         content in which the component appears, and environment info.
+         See: https://developer.atlassian.com/platform/forge/ui-kit-hooks-reference/#useproductcontext
+   */
    const [issues] = useState(async () => {
        return await getIssues(projectKey);
    });
@@ -59,17 +70,18 @@ const App = () => {
 
     return (
         <Fragment>
-            <Heading size="large">Customise UI using UI Kit</Heading>
+            <Heading size="large">Customize UI using UI Kit</Heading>
             <Heading size="large"></Heading>
-            <Heading size="medium">Issue list:</Heading>
-            <Heading size="small"></Heading>
+            <Heading size="medium">Static Issue list:</Heading>
 
             {issues.map(issue =>
               <Issue issueKey={issue.key} summary={issue.summary} />
             )}
 
-            {/* 3. Event handler - functions that describe what to do when the user interacts with them. Example - onSubmit */}
+            {/* 3. Event handler - functions that describe what to do when the user
+                interacts with them. Example - onSubmit */}
 
+            <Heading size="medium">Dynamic issue list:</Heading>
             <Form onSubmit={onSubmitFunction}>
                 <Select label="Select issue" name="selectedIssue" isRequired={true}>
                 
@@ -79,9 +91,9 @@ const App = () => {
                 {/* TASK - Add the 'Option' UI element whose value will be individual issue key. */}
                 {/* HINT - https://developer.atlassian.com/platform/forge/ui-kit-components/form/#select */}
 
-                    {/* {issues.map(issue =>
-                        ...
-                    )} */}
+                    { /*issues.map(issue =>
+                        ???
+                    ) */ }
 
                 {/* =================== */}
                 {/* *** END OF CHALLENGE *** */}
@@ -90,7 +102,10 @@ const App = () => {
             </Form>
             
             <Heading size="small"></Heading>
-            {formState && <Issue issueKey={formState.key} summary={formState.fields.summary} />}
+            <Text>{formState && formState.key}</Text>
+            <Text>{formState && formState.fields.summary}</Text>
+          
+            
             
             <Heading size="large">Todo app using Storage API</Heading>
             <Heading size="large"></Heading>
@@ -135,13 +150,13 @@ const fetchStoredData = async (contentId) => {
 
 const getIssue = async (issueKey) => {
   
-  // *** CHALLENGE 1 - Customise UI ***
+  // *** CHALLENGE 1 - Customize UI ***
   // ===================
 
   // TASK - Add the API to get an issue.
   // HINT - https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issues/#api-rest-api-3-issue-issueidorkey-get
 
-    const issueData = await api.asUser().requestJira(route`...`, {
+    const issueData = await api.asUser().requestJira(route`???`, {
         headers: {
             'Accept': 'application/json'
         }
