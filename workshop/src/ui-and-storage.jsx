@@ -134,7 +134,10 @@ const fetchStoredData = async (contentId) => {
   // *** CHALLENGE 3 - Storage API ***
   // ===================
 
-  // TASK - Using Storage API, fetch values only of 'todo' type. That means, values where 'key' starts with 'todo'.
+  // TASK - Update the TODO list to only display tasks that
+  // have yet to be done. In other words, lets find only
+  // those tasks that have keys that begin with the word 'todo' 
+  //
   // HINT - https://developer.atlassian.com/platform/forge/runtime-reference/storage-api-query/
 
   const data = await storage.query().getMany();
