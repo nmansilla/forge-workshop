@@ -25,4 +25,4 @@ permissions:
     - 'write:jira-work'
     - 'storage:app'
 app:
-  id: ari:cloud:ecosystem::app/7bd5ce60-3f33-4a69-bc4c-26466dfd96f2
+  id: ari:cloud:ecosystem::app/5c32e1b6-fb5d-44f3-950a-dd3b28703f40
